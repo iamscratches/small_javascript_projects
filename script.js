@@ -400,7 +400,7 @@ BMI. Don't forget they might have the same BMI.
 
 Remember: BMI = mass / height^2 = mass / height*height. (mass in kg, height in meter).
 */
-
+/*
 var John = {
 	fullName : 'John Smith',
 	mass : 92,
@@ -433,4 +433,33 @@ else if(John.bmi < Mark.bmi){
 }
 else{
 	console.log(John.fullName + ' and ' + Mark.fullName + ' has equal BMI of : ' + John.bmi);
+}
+*/
+
+/*******************
+* Loops and Iterations
+*/
+
+for(var i=0; i<10; i++){
+	console.log(i);
+}
+var John = ['John', 'Smith', 1990, 'Designer', false];
+for(var i=0; i<John.length; i++){
+	console.log(John[i]);
+}
+
+var i=0;
+while(i < John.length){
+	console.log(John[i]);
+	i++;
+}
+
+// continue and break statements
+for(var i=0; i<John.length; i++){
+	if(typeof John[i] !== 'string') continue;
+	console.log(John[i]);
+}
+for(var i=0; i<John.length; i++){
+	if(typeof John[i] !== 'string') break;
+	console.log(John[i]);
 }
