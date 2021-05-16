@@ -1,0 +1,22 @@
+.Registration{
+	margin: auto;
+  	width: 40%;
+	border: 1px solid #c3c3c3;
+	padding: 20px;
+	background-color: #FFC0CB;	
+}
+#name_label{
+	background-color: #FFFF00;
+}
+#student_name{
+	background-color: #FFFF00;
+}
+#age_label{
+	background-color: #FFFF00;
+}
+#student_age{
+	background-color: #FFFF00;
+}
+.Result{
+	display:none
+}

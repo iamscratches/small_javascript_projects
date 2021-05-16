@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Yash Work</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="Registration">
+		<p><h2>Registration</h2></p>
+		<form name="my_form" onsubmit="return validateForm()" method="post" class="my_form">
+			<p><span id="name_label">Student Name</span>
+				<input type="text" id="student_name" name="student_name" autofocus placeholder="Your name">
+			</p>
+			<p><span id="age_label">Age</span>
+				<input type="text" id="student_age" name="student_age" autofocus placeholder="Your age">
+			</p>
+			<p><span id="gender_label">Gender</span>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">M</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">F</label><br>
+			</p>
+			<p><label for="City">City : </label>
+				<select name="city" id="city">
+				  <option value=""></option>
+				  <option value="delhi">Delhi</option>
+				  <option value="mumbai">Mumbai</option>
+				  <option value="chennai">Chennai</option>
+				  <option value="kolkata">Kolkata</option>
+				</select>
+			</p>
+			<p><label for="hobby">Hobby</label>
+				<input type="checkbox" id="hobby" name="hobby" value="Painting">
+				<label for="painting"> Painting</label>
+				<input type="checkbox" id="hobby" name="hobby" value="Dancing">
+				<label for="dancing"> Dancing</label>
+				<input type="checkbox" id="hobby" name="hobby" value="Sports">
+				<label for="sports"> Sports</label><br>
+			</p>
+			<input type="submit" value="Submit">
+		</form>
+		<div class="Result">
+			<br>Name: <span id="name_value"></span>
+			<br>Age: <span id="age_value"></span>
+			<br>City : <span id="city_value"></span>
+			<br>Hobbies: <span id="hobbies_value"></span>
+		</div>
+		
+	</div>
+
+</body>
+</html>
